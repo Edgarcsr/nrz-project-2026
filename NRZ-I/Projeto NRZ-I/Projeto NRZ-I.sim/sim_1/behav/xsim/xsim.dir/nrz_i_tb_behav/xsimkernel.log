@@ -1,0 +1,4 @@
+Running: xsim.dir/nrz_i_tb_behav/xsimk.exe -simmode gui -wdb nrz_i_tb_behav.wdb -simrunnum 0 -socket 55294
+Design successfully loaded
+Design Loading Memory Usage: 10268 KB (Peak: 10268 KB)
+Design Loading CPU Usage: 61 ms

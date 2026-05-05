@@ -1,0 +1,4 @@
+Running: xsim.dir/nrz_l_encoder_tb_behav/xsimk.exe -simmode gui -wdb nrz_l_encoder_tb_behav.wdb -simrunnum 0 -socket 53986
+Design successfully loaded
+Design Loading Memory Usage: 10264 KB (Peak: 10264 KB)
+Design Loading CPU Usage: 93 ms
