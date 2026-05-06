@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/081230039/Projeto NRZ-L/Projeto NRZ-L.srcs/sources_1/new/nrzl.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'nrz_l_encoder'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/081230039/Projeto NRZ-L/Projeto NRZ-L.srcs/sim_1/new/tb_nrzl.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'nrz_l_encoder_tb'
