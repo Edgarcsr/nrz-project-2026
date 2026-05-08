@@ -5,7 +5,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity nrz_l is
     Generic (
         DATA_WIDTH    : integer := 16; -- data size to be read
-        TICKS_PER_BIT : integer := 10 -- clk cycles per bit
+        TICKS_PER_BIT : integer := 100000000 -- clk cycles per bit
     );
     Port (
         clk     : in  STD_LOGIC;
