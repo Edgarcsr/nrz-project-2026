@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.runs/synth_1/nrz_l.tcl"
+  variable script "C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.runs/synth_1/nrz_l.tcl"
   variable category "vivado_synth"
 }
 
@@ -65,15 +65,15 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {{C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.srcs/sources_1/new/nrz_l.vhd}}
+read_vhdl -library xil_defaultlib {{C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.srcs/sources_1/new/nrz_l.vhd}}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -83,12 +83,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.srcs/constrs_1/new/basys3_nrz_l.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.srcs/constrs_1/new/basys3_nrz_l.xdc}}]
+read_xdc {{C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.srcs/constrs_1/new/basys3_nrz_l.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.srcs/constrs_1/new/basys3_nrz_l.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.srcs/utils_1/imports/synth_1/nrz_l.dcp}
+read_checkpoint -auto_incremental -incremental {C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.srcs/utils_1/imports/synth_1/nrz_l.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

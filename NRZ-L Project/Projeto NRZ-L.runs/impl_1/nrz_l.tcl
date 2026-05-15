@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.runs/impl_1/nrz_l.tcl"
+  variable script "C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.runs/impl_1/nrz_l.tcl"
   variable category "vivado_impl"
 }
 
@@ -110,7 +110,7 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 6  }
   open_checkpoint nrz_l_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.cache/wt} [current_project]
 set_property TOP nrz_l [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

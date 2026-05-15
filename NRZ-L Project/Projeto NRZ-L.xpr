@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="71" Path="C:/Users/081230039/Downloads/nrz-project-2026-main/nrz-project-2026-main/NRZ-L Project/Projeto NRZ-L.xpr">
+<Project Product="Vivado" Version="7" Minor="71" Path="C:/Users/081230039/Desktop/nrz-project-2026/NRZ-L Project/Projeto NRZ-L.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d9e043c42a574cc2aa3930a8a237b429"/>

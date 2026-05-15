@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date             : Fri May  8 20:37:37 2026
+| Date             : Fri May 15 20:55:13 2026
 | Host             : CE-LAB6702 running 64-bit major release  (build 9200)
 | Command          : report_power -file nrz_l_power_routed.rpt -pb nrz_l_power_summary_routed.pb -rpx nrz_l_power_routed.rpx
 | Design           : nrz_l
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.074        |
+| Total On-Chip Power (W)  | 0.075        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.002        |
+| Dynamic (W)              | 0.003        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       87 |       --- |             --- |
+| Slice Logic    |    <0.001 |       88 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       41 |     20800 |            0.20 |
 |   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
-|   Register     |    <0.001 |       32 |     41600 |            0.08 |
+|   Register     |    <0.001 |       33 |     41600 |            0.08 |
 |   F7/F8 Muxes  |    <0.001 |        3 |     32600 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       63 |       --- |             --- |
-| I/O            |     0.001 |       23 |       106 |           21.70 |
+| Signals        |    <0.001 |       65 |       --- |             --- |
+| I/O            |     0.002 |       24 |       106 |           22.64 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.074 |          |           |                 |
+| Total          |     0.075 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,7 +141,7 @@ Table of Contents
 +-------+-----------+
 | Name  | Power (W) |
 +-------+-----------+
-| nrz_l |     0.002 |
+| nrz_l |     0.003 |
 +-------+-----------+
 
 

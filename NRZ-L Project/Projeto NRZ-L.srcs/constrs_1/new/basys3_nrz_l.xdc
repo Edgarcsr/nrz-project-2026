@@ -56,3 +56,8 @@ set_property PACKAGE_PIN L1 [get_ports {bit_idx[3]}]
 # Reset mapeado para o botão central (btnC)
 set_property PACKAGE_PIN U18 [get_ports reset]						
 	set_property IOSTANDARD LVCMOS33 [get_ports reset]
+
+## Pmod Header JA (Pino 1)
+# Saída para o osciloscópio
+set_property PACKAGE_PIN J1 [get_ports tx_pmod]					
+	set_property IOSTANDARD LVCMOS33 [get_ports tx_pmod]

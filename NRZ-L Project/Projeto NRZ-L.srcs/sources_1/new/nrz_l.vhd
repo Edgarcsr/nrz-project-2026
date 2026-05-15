@@ -11,7 +11,8 @@ entity nrz_l is
         clk     : in  STD_LOGIC;
         reset   : in  STD_LOGIC;
         data_in : in  STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0); -- payload
-        nrz_out : out STD_LOGIC; -- our serial tx line
+        nrz_out : out STD_LOGIC; -- our serial tx line (LED)
+        tx_pmod : out STD_LOGIC; -- Analog/Oscilloscope output (Pmod JA1)
         bit_idx : out integer range 0 to DATA_WIDTH - 1 -- exposing for easy debugging in waveform
     );
 end nrz_l;
@@ -28,9 +29,11 @@ begin
             bit_ptr <= DATA_WIDTH - 1;
             tick_counter <= 0;
             nrz_out <= '0';
+            tx_pmod <= '0';
         elsif rising_edge(clk) then
-            -- push the current bit to the output wire
+            -- push the current bit to the output wire and Pmod
             nrz_out <= data_in(bit_ptr);
+            tx_pmod <= data_in(bit_ptr);
 
             if tick_counter < TICKS_PER_BIT - 1 then
                 -- increment counter
